@@ -1,17 +1,14 @@
 .game_area {
 background-color: #bbada0;
 margin: 100px 20%;
+padding: 5px;
 width: 50%;
+display: grid;
 }
 
-.game_area:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
 
 .game_area__block {
   margin: 3px;
   width: 25%;
-  background-color: #faf8ef;  
+  background-color: #faf8ef;
 }
