@@ -5,17 +5,23 @@ grid-template-areas:
 "header"
 "content"
 "footer";
-background-image: url(./img/back.jpg);
+background-image: url(../img/back.jpg);
 height: 100vh;
 margin: 0;
 }
 
 header, footer, content, nav, div {
 padding: 20px;
-background: gold;
+background: #ffd7003d;
+}
+nav.a {
+  margin-left: auto;
+  margin-right: auto;
 }
 nav {
-background-color: #aaaaaa4d;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 1vw;
 }
 
 h2 {
@@ -34,8 +40,6 @@ grid-area: content;
 grid-area: nav;
 }
 
-
-
 .game_area {
 background-color: #bbada0;
 padding: 10px;
@@ -49,9 +53,9 @@ grid-template-columns: repeat(4, 1fr);
 grid-gap: 1vw;
 }
 
-
 .game_area__block {
   padding: 42px;
+  border-radius: 10px;
   text-align: center;
   background-color: #faf8ef;
 }
