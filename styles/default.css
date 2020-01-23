@@ -5,23 +5,47 @@ grid-template-areas:
 "header"
 "content"
 "footer";
-background-image: url(../img/back.jpg);
 height: 100vh;
 margin: 0;
+}
+.bg-image {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ padding: 0;
+ background-image: url(../img/back.jpg);
+ z-index: 0;
+ filter: blur(8px);
+-webkit-filter: blur(8px);
+}
+.page {
+  padding: 0;
+  z-index: 999;
 }
 
 header, footer, content, nav, div {
 padding: 20px;
 background: #ffd7003d;
 }
-nav.a {
-  margin-left: auto;
-  margin-right: auto;
-}
-nav {
+
+.nav {
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-gap: 1vw;
+}
+
+.nav>a {
+  padding-top: 15%;
+  color: #fff;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 150%;
+}
+a.logo {
+  padding: 0;
+  text-align: left;
 }
 
 h2 {
