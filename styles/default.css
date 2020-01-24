@@ -9,13 +9,14 @@ height: 100vh;
 margin: 0;
 font-family: Helvetica, sans-serif;
 color: #fff802;
+height: 100%;
 }
 .bg-image {
  position: fixed;
  top: 0;
  left: 0;
  width: 100%;
- height: 100%;
+ height: max(100vh, 100%);
  padding: 0;
  background-image: url(../img/back.jpg);
  z-index: 0;
@@ -25,11 +26,12 @@ color: #fff802;
 .page {
   padding: 0;
   z-index: 999;
+  height: max(100vh, 100%);
+  background: #b397003d;
 }
 
-header, footer, content, nav, div {
+header, content, nav, div {
 padding: 20px;
-background: #b397003d;
 }
 
 .nav {
@@ -37,6 +39,8 @@ display: grid;
 grid-template-columns: repeat(4, 1fr);
 grid-gap: 1vw;
 background-color: #775206c2;
+padding: 5px;
+padding-bottom: 0;
 }
 
 .nav>a {
@@ -45,7 +49,8 @@ background-color: #775206c2;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
-  font-size: 150%;
+  font-size: 125%;
+  padding: 20px;
 }
 
 .nav>a:hover {
@@ -54,6 +59,7 @@ background-color: #775206c2;
 a.logo {
   padding: 0;
   text-align: left;
+  width: max(25vw, 50px);
 }
 
 
@@ -71,6 +77,10 @@ grid-area: content;
 }
 #mainNav {
 grid-area: nav;
+}
+.content {
+  padding-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .game_area {
@@ -93,10 +103,30 @@ grid-gap: 1vw;
   background-color: #faf8ef;
 }
 
-.footer {
-  margin-top: 15px;
-  padding: 5px;
+.login-form {
+  margin-top: 30px;
+  margin-bottom: 50vh;
+  margin-left: 1fr;
+  margin-right: 1fr;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1vw;
+}
+
+a.btn {
+
+  text-align: center;
+  font-weight: bold;
+}
+
+footer {
+  z-index: 999;
+  padding: 0;
+  height: 80px;
+  width: 100%;
   background-color: #775206c2;
   color: #fff80294;
   text-align: center;
+
 }

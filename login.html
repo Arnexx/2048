@@ -6,13 +6,28 @@
     <link href="./styles/default.css" type="text/css" rel="stylesheet">
   </head>
   <body>
-    <nav id=”nav”>
-      <img src="./img/logo.png" alt="2048" width="10%">
-    </nav>
-    <header id=”pageHeader”>Header</header>
-    <div id=”pageContent”>Ads</div>
-    <footer id=”pageFooter”>Footer</footer>
-
+    <div class="bg-image"></div>
+    <div class="page">
+      <div class="nav" id="mainNav">
+        <a href="./index.html" class="logo"><img src="./img/logo.png" alt="2048" width="25%"></a>
+        <a href="./index.html">Home</a>
+        <a href="./login.html">Sign in</a>
+        <a href="#">About</a>
+      </div>
+      <div class="header" id="pageHeader">
+        <h2>Sign in</h2>
+      </div>
+      <div class="content" id ="pageContent">
+        <form class="login-form" action="index.html" method="post">
+          <label for="GET-name">Name:</label>
+          <input id="GET-name" type="text" name="name">
+          <label for="GET-password">Password:</label>
+          <input id="GET-password" type="password" name="password">
+          <input type="submit" value="Save">
+          <a class="btn">Register</a>
+        </form>
+      </div>
     </div>
+    <footer><p>  Some footer info </p> </footer>
   </body>
 </html>
